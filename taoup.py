@@ -113,7 +113,7 @@ def main(script='taoup', mode='random'):
         if mode == 'random':
             quote = random_item(q for q in quotes if not is_header(q))
             if quote:
-                print(repr(quote))
+                print(quote)
         elif mode == 'all':
             all(quotes, jump=is_header)
             print('Done, thank you!')
